@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+body {
+    background-color: #f7f7f7;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.name {
+    color: #2781f8;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.name span {
+    color: #111110;
+}
+
+.hero-section {
+    padding: 50px 0;
+    text-align: center;
+    background: #e0e5f9;
+}
+
+.profile-img {
+    background: url('./assets/—Pngtree—copywriter\ background\ elements\ ring\ splash_2301538.png') no-repeat center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+.about-section,
+.skills-section,
+.projects-section,
+.education-section,
+.experience-section {
+    padding: 80px 0;
+}
+
+.about-image {
+    background: url('./assets/graph.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.skills-item,
+.education-item {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.skills-icon,
+.education-icon {
+    font-size: 48px;
+    color: #060606;
+}
+
+.skills-icon i,
+.education-icon i {
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.fa-youtube, 
+.fa-github, 
+.fa-linkedin {
+    font-size: 40px;
+    padding: 10px;
+}
+
+.fa-github {
+    color: black;
+}
+
+.fa-linkedin {
+    color: #1e80ff;
+}
+
+/* Timeline styles */
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 0;
+    list-style: none;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #ddd;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-item-right,
+.timeline-item-left {
+    width: 45%;
+    padding: 20px 30px;
+    background: #f5f5f5;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item-right {
+    float: right;
+    margin-left: 55%;
+}
+
+.timeline-item-left {
+    float: left;
+    margin-right: 55%;
+}
+
+.timeline-item-right:before,
+.timeline-item-left:before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    border-style: solid;
+}
+
+.timeline-item-right:before {
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #f5f5f5 transparent transparent;
+}
+
+.timeline-item-left:before {
+    right: -15px;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #f5f5f5;
+}
+
+/* Navbar */
+.navbar.sticky-top {
+    top: 0;
+    z-index: 1030;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: #2781f8;
+}
+
+/* Section backgrounds */
+#about {
+    background: #d1dbf0;
+}
+
+#experience {
+    background: #b6bfd4;
+}
+
+#projects {
+    background: #93a5e0;
+}
+
+#skills {
+    background: #f5f5f5;
+}
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+/* Button Animation Styles */
+.animated-button {
+    background-color: #2781f8;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.animated-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 300%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(-50%) skewX(-20deg);
+    transition: all 0.3s ease;
+}
+
+.animated-button:hover:before {
+    width: 0;
+}
+
+.animated-button:hover {
+    background-color: #1e6ed0;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.animated-button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+.resume-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.resume-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.resume-section p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.resume-section button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resume-section button:hover {
+  background-color: #45a049;
+}
+/* Styling for the social media icons */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon i {
+    margin-right: 8px;
+}
+
+.social-icon:hover {
+    color: #0073b1; /* LinkedIn blue for LinkedIn */
+}
+
+/* Specific color changes for GitHub */
+.social-icon:nth-child(2):hover {
+    color: #333; /* Dark gray for GitHub */
+}
